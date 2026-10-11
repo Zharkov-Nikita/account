@@ -1,3 +1,3 @@
-import { AddUserEntity1789398389503 } from './1789398389503-AddUserEntity';
+import { AddUserEntity1791730129148 } from './1791730129148-AddUserEntity';
 
-export default [AddUserEntity1789398389503];
+export default [AddUserEntity1791730129148];

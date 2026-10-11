@@ -21,14 +21,14 @@ export class UserController {
     return this.userService.findAll(getUserFilterDto);
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.userService.findOne(id);
-  }
-
   @Get('/verification')
   verification(@Query() dto: SignInDto): Promise<boolean> {
     return this.userService.verification(dto);
+  }
+
+  @Get(':id')
+  findOne(@Param('id') id: string) {
+    return this.userService.findOne(id);
   }
 
   @Patch(':id')
