@@ -6,9 +6,10 @@ import { UserEntity } from './entities/user.entity';
 import { DatabaseModule } from '../database/database.module';
 import { UserRepository } from './user.repository';
 import { RedisModule } from 'src/config/redis/redis.module';
+import { KafkaModule } from '../../config/kafka/kafka.module';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([UserEntity]), DatabaseModule, RedisModule],
+  imports: [TypeOrmModule.forFeature([UserEntity]), DatabaseModule, RedisModule, KafkaModule],
   providers: [UserService, UserRepository],
   controllers: [UserController],
 })

@@ -1,4 +1,4 @@
-import { Redis } from 'ioredis';
+import Redis from 'ioredis';
 import { RedisModuleOptions } from './redis.interface';
 
 export function createRedisConnection(options: RedisModuleOptions): Redis {

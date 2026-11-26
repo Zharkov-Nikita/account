@@ -17,10 +17,10 @@ export class UserController {
     return this.userService.create(createUserDto);
   }
 
-  @Post('/balance')
-  balance(@Body() body: ChangeBalanceDto): Promise<void> {
-    return this.userService.changeBalance(body);
-  }
+  //@Post('/balance')
+  //balance(@Body() body: ChangeBalanceDto): Promise<void> {
+  //  return this.userService.changeBalance(body);
+  //}
 
   @Get()
   findAll(@Query() getUserFilterDto: GetUserFilterDto): Promise<{ items: UserDto[]; total: number }> {
